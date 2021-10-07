@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>PARCIAL</title>
+	<style>
+		.boto1{
+			position: absolute;
+			top: 5px;
+			left: 50px;
+			background: #454DF2;
+			width: 1000px;
+			height: 200px;
+		}
+		.boto2{
+			position: relative;
+			top: -10px;
+			left: 1200px;
+			background: #F2ED45;
+			width: 190px;
+			height: 190px;
+			border-radius: 80%;
+
+		}
+		.grande{
+			position: absolute;
+			top: 289px;
+			left: 50px;
+			background: #9EEA57;
+			width: 1000px;
+			height: 490px;
+			display: none;
+		}
+
+		.tema2{
+			position: absolute;
+			top: 289px;
+			left: 50px;
+			background: #911A57;
+			width: 1000px;
+			height: 490px;
+			display: none;
+		}
+
+
+		.boto3{
+			position: absolute;
+			top: 660px;
+			left: 1200px;
+			background: #FAF277;
+			width: 200px;
+		}
+		.boto4{
+			position: absolute;
+			top: 660px;
+			left: 1420px;
+			background: #F35F0A;
+			width: 140px;
+		}
+
+		.cerrar{
+			position: absolute;
+			top: 1000px;
+			left: 400px;
+			background: #5762EA ;
+			width: 140px;
+			display: none;
+		}
+		 body {
+        heigh:665px;
+        background-image: url("fondo.jpg");
+        background-repeat: repeat-y;
+        background-size: 100rem;
+    }
+       
+	</style>
+	<audio id="sound1" src="audio2.mp3" preload="auto"></audio>
+
+</head>
+
+
+<body>
+
+
+	<div class="boto1"  id="apa1" onclick="document.getElementById('grande').style.display='inline'"><H1 style="text-align:center">  EL CHOCOLATE</H1></div>
+
+	<div class="boto2"  id="apa2" onclick="document.getElementById('sound1').play();"><H1 style="text-align:center"><p style="font-size:30px">PLAY</p></H1>
+	 
+</div>
+	<div class="grande" id="grande">
+	<H1> El chocolate es el alimento que se obtiene mezclando azúcar con dos productos que derivan de la manipulación de las semillas del cacao: la masa del cacao y la manteca de cacao</H1>
+   <div align="center"><img src="https://images.theconversation.com/files/359418/original/file-20200922-20-jz9fp7.jpg?ixlib=rb-1.1.0&q=45&auto=format&w=1200&h=1200.0&fit=crop" height="200px" width="260"></div>
+</div>
+<div class="tema2" id="tema2">
+	<H1> El chocolate blanco es un dulce de chocolate, de color marfil pálido, elaborado con manteca de cacao, azúcar, sólidos lácteos y, a veces, vainilla. El chocolate blanco no contiene sólidos de cacao, que se encuentran en otros tipos de chocolate, como el chocolate con leche y el chocolate negro.</H1>
+   <div align="center"><img src="https://okdiario.com/img/2018/07/26/white-chocolate-380702_1920.jpg" height="200px" width="260"></div>
+   <div class="cerrar" id="cerrar">
+	<H1> Cerrar</H1>
+</div>
+</div>
+
+	<div class="boto4"  id="apa4" onclick="document.getElementById('tema2').style.display='inline'"><H1 style="text-align:center"> TEMA 2</H1>.</div>
+
+</body>
+</html>
+
+
